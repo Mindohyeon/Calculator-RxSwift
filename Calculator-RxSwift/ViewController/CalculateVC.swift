@@ -27,11 +27,6 @@ class CalculateVC: UIViewController {
     }
     
     private let resultLabel = UILabel()
-    
-    private let sendButton = UIButton().then {
-        $0.backgroundColor = .blue
-        $0.setTitle("확인", for: .normal)
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,7 +59,7 @@ class CalculateVC: UIViewController {
     
     private func addView() {
         view.backgroundColor = .white
-        view.addSubviews(inputLabel, inputTextField, resultLabel, sendButton)
+        view.addSubviews(inputLabel, inputTextField, resultLabel)
     }
     
     private func setLayout() {
@@ -80,11 +75,6 @@ class CalculateVC: UIViewController {
         
         resultLabel.snp.makeConstraints {
             $0.top.equalTo(inputTextField.snp.bottom).offset(40)
-            $0.centerX.equalToSuperview()
-        }
-        
-        sendButton.snp.makeConstraints {
-            $0.bottom.equalToSuperview().inset(50)
             $0.centerX.equalToSuperview()
         }
     }
