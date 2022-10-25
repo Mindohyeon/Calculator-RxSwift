@@ -9,19 +9,30 @@
 /* Begin PBXBuildFile section */
 		DF5BBE9C28F8DB16005B3FC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5BBE9B28F8DB16005B3FC1 /* AppDelegate.swift */; };
 		DF5BBE9E28F8DB16005B3FC1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5BBE9D28F8DB16005B3FC1 /* SceneDelegate.swift */; };
-		DF5BBEA028F8DB16005B3FC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5BBE9F28F8DB16005B3FC1 /* ViewController.swift */; };
+		DF5BBEA028F8DB16005B3FC1 /* CalculateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5BBE9F28F8DB16005B3FC1 /* CalculateVC.swift */; };
 		DF5BBEA528F8DB18005B3FC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5BBEA428F8DB18005B3FC1 /* Assets.xcassets */; };
 		DF5BBEA828F8DB18005B3FC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF5BBEA628F8DB18005B3FC1 /* LaunchScreen.storyboard */; };
+		DFAD9AA42906524B00D6A950 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DFAD9AA32906524B00D6A950 /* SnapKit */; };
+		DFAD9AA72906525A00D6A950 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = DFAD9AA62906525A00D6A950 /* Then */; };
+		DFAD9AAB2906533200D6A950 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD9AAA2906533200D6A950 /* UIView.swift */; };
+		DFAD9AB02906573300D6A950 /* CalculateVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD9AAF2906573300D6A950 /* CalculateVM.swift */; };
+		DFAD9AB82906617500D6A950 /* CalculateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD9AB72906617500D6A950 /* CalculateModel.swift */; };
+		DFAD9ABB290663BF00D6A950 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = DFAD9ABA290663BF00D6A950 /* RxCocoa */; };
+		DFAD9ABD290663BF00D6A950 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = DFAD9ABC290663BF00D6A950 /* RxRelay */; };
+		DFAD9ABF290663BF00D6A950 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DFAD9ABE290663BF00D6A950 /* RxSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DF5BBE9828F8DB16005B3FC1 /* Calculator-RxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Calculator-RxSwift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF5BBE9B28F8DB16005B3FC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF5BBE9D28F8DB16005B3FC1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DF5BBE9F28F8DB16005B3FC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DF5BBE9F28F8DB16005B3FC1 /* CalculateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateVC.swift; sourceTree = "<group>"; };
 		DF5BBEA428F8DB18005B3FC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF5BBEA728F8DB18005B3FC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF5BBEA928F8DB18005B3FC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFAD9AAA2906533200D6A950 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		DFAD9AAF2906573300D6A950 /* CalculateVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateVM.swift; sourceTree = "<group>"; };
+		DFAD9AB72906617500D6A950 /* CalculateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +40,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFAD9ABB290663BF00D6A950 /* RxCocoa in Frameworks */,
+				DFAD9AA42906524B00D6A950 /* SnapKit in Frameworks */,
+				DFAD9ABF290663BF00D6A950 /* RxSwift in Frameworks */,
+				DFAD9ABD290663BF00D6A950 /* RxRelay in Frameworks */,
+				DFAD9AA72906525A00D6A950 /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,14 +70,65 @@
 		DF5BBE9A28F8DB16005B3FC1 /* Calculator-RxSwift */ = {
 			isa = PBXGroup;
 			children = (
+				DFAD9AB62906616C00D6A950 /* Model */,
+				DFAD9AAE290656F600D6A950 /* ViewModel */,
+				DFAD9AAD290656F000D6A950 /* ViewController */,
+				DFAD9AA82906532600D6A950 /* Util */,
 				DF5BBE9B28F8DB16005B3FC1 /* AppDelegate.swift */,
 				DF5BBE9D28F8DB16005B3FC1 /* SceneDelegate.swift */,
-				DF5BBE9F28F8DB16005B3FC1 /* ViewController.swift */,
 				DF5BBEA428F8DB18005B3FC1 /* Assets.xcassets */,
 				DF5BBEA628F8DB18005B3FC1 /* LaunchScreen.storyboard */,
 				DF5BBEA928F8DB18005B3FC1 /* Info.plist */,
 			);
 			path = "Calculator-RxSwift";
+			sourceTree = "<group>";
+		};
+		DFAD9AA82906532600D6A950 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				DFAD9AAC2906533C00D6A950 /* Extension */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		DFAD9AA92906532B00D6A950 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				DFAD9AAA2906533200D6A950 /* UIView.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		DFAD9AAC2906533C00D6A950 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DFAD9AA92906532B00D6A950 /* UIView */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DFAD9AAD290656F000D6A950 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DF5BBE9F28F8DB16005B3FC1 /* CalculateVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DFAD9AAE290656F600D6A950 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DFAD9AAF2906573300D6A950 /* CalculateVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DFAD9AB62906616C00D6A950 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DFAD9AB72906617500D6A950 /* CalculateModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,6 +147,13 @@
 			dependencies = (
 			);
 			name = "Calculator-RxSwift";
+			packageProductDependencies = (
+				DFAD9AA32906524B00D6A950 /* SnapKit */,
+				DFAD9AA62906525A00D6A950 /* Then */,
+				DFAD9ABA290663BF00D6A950 /* RxCocoa */,
+				DFAD9ABC290663BF00D6A950 /* RxRelay */,
+				DFAD9ABE290663BF00D6A950 /* RxSwift */,
+			);
 			productName = "Calculator-RxSwift";
 			productReference = DF5BBE9828F8DB16005B3FC1 /* Calculator-RxSwift.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +182,11 @@
 				Base,
 			);
 			mainGroup = DF5BBE8F28F8DB16005B3FC1;
+			packageReferences = (
+				DFAD9AA22906524B00D6A950 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				DFAD9AA52906525A00D6A950 /* XCRemoteSwiftPackageReference "Then" */,
+				DFAD9AB9290663BF00D6A950 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = DF5BBE9928F8DB16005B3FC1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -134,8 +213,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF5BBEA028F8DB16005B3FC1 /* ViewController.swift in Sources */,
+				DFAD9AAB2906533200D6A950 /* UIView.swift in Sources */,
+				DF5BBEA028F8DB16005B3FC1 /* CalculateVC.swift in Sources */,
 				DF5BBE9C28F8DB16005B3FC1 /* AppDelegate.swift in Sources */,
+				DFAD9AB02906573300D6A950 /* CalculateVM.swift in Sources */,
+				DFAD9AB82906617500D6A950 /* CalculateModel.swift in Sources */,
 				DF5BBE9E28F8DB16005B3FC1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,7 +286,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_KEY_NSMainStoryboardFile = "";
+				IBSC_FLATTEN_NIBS = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -259,7 +341,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_KEY_NSMainStoryboardFile = "";
+				IBSC_FLATTEN_NIBS = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -282,7 +364,6 @@
 				INFOPLIST_FILE = "Calculator-RxSwift/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -310,7 +391,6 @@
 				INFOPLIST_FILE = "Calculator-RxSwift/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -348,6 +428,61 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DFAD9AA22906524B00D6A950 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		DFAD9AA52906525A00D6A950 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		DFAD9AB9290663BF00D6A950 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DFAD9AA32906524B00D6A950 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DFAD9AA22906524B00D6A950 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		DFAD9AA62906525A00D6A950 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DFAD9AA52906525A00D6A950 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		DFAD9ABA290663BF00D6A950 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DFAD9AB9290663BF00D6A950 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		DFAD9ABC290663BF00D6A950 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DFAD9AB9290663BF00D6A950 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		DFAD9ABE290663BF00D6A950 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DFAD9AB9290663BF00D6A950 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DF5BBE9028F8DB16005B3FC1 /* Project object */;
 }
